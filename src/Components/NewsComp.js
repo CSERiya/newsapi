@@ -42,7 +42,7 @@ const NewsComp = (props) => {
         setTotalResults(parsedData.totalResults)
       };
 
-    return (
+    return (  
         <>
             <h1 className="text-center">NewsHub - Trending {capitalizefirstLetter(props.category)} Headlines</h1>
             <InfiniteScroll
