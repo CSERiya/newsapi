@@ -54,7 +54,7 @@ const NewsComp = (props) => {
     };
 
     useEffect(() => {
-        document.title = `Newsapp - ${capitalizeFirstLetter(props.category)}`;
+        document.title = `NewsHub - ${capitalizeFirstLetter(props.category)}`;
         fetchAllArticles();
     }, [props.category, props.country, props.apiKey]);
 
@@ -105,7 +105,7 @@ const NewsComp = (props) => {
                 `}
             </style>
 
-            <h1 className="text-center" style={{marginTop:'120px'}}>Newsapp - Trending {capitalizeFirstLetter(props.category)} Headlines</h1>
+            <h1 className="text-center" style={{marginTop:'120px'}}>NewsHub - Trending {capitalizeFirstLetter(props.category)} Headlines</h1>
             {loading && <Spinner />}
             <div className="container">
                 <div className="row">
