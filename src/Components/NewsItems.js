@@ -28,3 +28,4 @@ const NewsItems =(props)=>{
     }
 
 export default NewsItems
+
